@@ -35,8 +35,8 @@ export default function Register() {
             <div style={{ marginBottom:22 }}>
               <label style={{ display:'block', marginBottom:6, fontSize:14, fontWeight:600, color:'#374151' }}>Роль</label>
               <select value={form.role} onChange={e => setForm(p=>({...p,role:e.target.value}))}>
-                <option value="student">🎓 Студент</option>
-                <option value="teacher">👨‍🏫 Преподаватель</option>
+                <option value="student">Студент</option>
+                <option value="teacher">Преподаватель</option>
               </select>
             </div>
             <button className="btn btn-primary" type="submit" disabled={loading} style={{ width:'100%', justifyContent:'center', padding:'11px', fontSize:15, borderRadius:10 }}>
